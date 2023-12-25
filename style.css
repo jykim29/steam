@@ -40,14 +40,15 @@ body {
   height: 750px;
   background-image: url("./assets/header_bg.gif");
   background-repeat: no-repeat;
-  background-size: 190%;
+  background-size: cover;
   background-position: center;
 }
 
 /* 스와이퍼 게임 카드 */
 .swiper-recommend {
   position: relative;
-  transform: translateY(-100px);
+  transform: translateY(-150px);
+  margin-bottom: -100px;
 }
 .swiper-recommend > .swiper {
   position: relative;
@@ -171,6 +172,7 @@ body {
 
 .swiper-category {
   position: relative;
+  padding-block-end: 50px;
 }
 .swiper-category > .swiper {
   position: relative;
