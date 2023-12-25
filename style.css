@@ -1,0 +1,198 @@
+@import "./reset.css";
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* 헤더 영역 */
+.header {
+  background-color: #171d25;
+  height: 104px;
+}
+.header-inner {
+  max-width: 940px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.logo img {
+  width: 176px;
+}
+.gnb {
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.main {
+  background-image: url(./assets/body_bg.gif);
+  background-repeat: repeat;
+}
+
+/* 비주얼 - 세일 */
+.visual-sale {
+  width: 100%;
+  height: 750px;
+  background-image: url("./assets/header_bg.gif");
+  background-repeat: no-repeat;
+  background-size: 190%;
+  background-position: center;
+}
+
+/* 스와이퍼 게임 카드 */
+.swiper-recommend {
+  position: relative;
+  transform: translateY(-100px);
+}
+.swiper-recommend > .swiper {
+  position: relative;
+  width: 1180px;
+  height: 450px;
+  margin: 0 auto;
+}
+.card {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+  background-color: yellow;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-detail {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  column-gap: 5px;
+  background-color: #344654;
+}
+.price,
+.sale {
+  padding: 5px;
+}
+.sale {
+  background-color: #a1cd44;
+  font-weight: bold;
+  color: #000;
+}
+.price {
+  color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 23px;
+  height: 36px;
+  background-image: url(./assets/arrows.png);
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-button-next {
+  transform: translateX(620px);
+  background-position: 0 0;
+}
+.swiper-button-prev {
+  transform: translateX(-640px);
+  background-position: -23px 0;
+}
+
+.games-pagination {
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.bullet {
+  display: inline-block;
+  width: 15px;
+  height: 9px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  opacity: 0.33;
+  cursor: pointer;
+  margin-inline: 2px;
+}
+.bullet-active {
+  opacity: 1;
+}
+
+.promotion-wrapper {
+  width: 100%;
+}
+.promotion {
+  min-width: 900px;
+  max-width: 1200px;
+  height: 150px;
+  margin: 0 auto;
+  background: url("./assets/giftcard.jpg") no-repeat center;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-block-end: 50px;
+}
+.gift-card {
+  background: url("./assets/giftcard.jpg") no-repeat center;
+}
+.awards {
+  background: url("./assets/awards.jpg") no-repeat center;
+}
+.promotion:hover {
+  transform: scale(1.02);
+}
+
+.category {
+  text-align: center;
+  margin-block-end: 20px;
+}
+.category-heading {
+  display: inline-block;
+  margin-inline-end: 10px;
+  vertical-align: top;
+}
+.category-desc {
+  display: inline-block;
+  color: #000;
+  padding: 8px;
+  background-color: #4ecc8f;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.swiper-category {
+  position: relative;
+}
+.swiper-category > .swiper {
+  position: relative;
+  width: 1180px;
+  height: 250px;
+  margin: 0 auto;
+}
+.category-item {
+  position: relative;
+  width: 253px;
+  height: 250px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.category-item:hover {
+  transform: scale(1.05);
+}
+.category-title {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  font-weight: bold;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+  transform: translateX(-50%);
+}
